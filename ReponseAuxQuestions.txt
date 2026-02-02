@@ -1,0 +1,33 @@
+1- Expliquez les concepts suivants
+
+Framework : Ensemble d’outils et de conventions facilitant le développement d’applications. Django est un framework web en Python.
+
+MVT (Model – View – Template) : Architecture de Django. Le Model gère les données, la View la logique, et le Template l’affichage.
+
+ORM (Object Relational Mapping) : Outil permettant de manipuler une base de données avec des objets Python au lieu d’écrire du SQL.
+
+2- Différence entre MVT et MVC
+
+MVC : Model (données), View (affichage), Controller (logique).
+
+MVT : Model (données), View (logique), Template (affichage). Le rôle du Controller est pris en charge par Django lui-même.
+
+3- Utilité de la commande python manage.py help
+
+Affiche la liste des sous-commandes disponibles pour gérer un projet Django (runserver, migrate, createsuperuser, etc.).
+
+4- Port par défaut du serveur Django
+
+Le serveur démarre par défaut sur le port 8000.
+
+5- Commande pour démarrer un projet Django sur le port 5000
+
+python manage.py runserver 5000
+
+6-Rôle de la variable INSTALLED_APPS
+
+Liste des applications activées dans le projet. Permet à Django de charger leurs modèles, migrations, fichiers statiques et fonctionnalités.
+
+7 -Deux projets Django peuvent-ils démarrer sur un même port ?
+
+Non. Un port ne peut être occupé que par un seul processus à la fois. Pour lancer plusieurs projets simultanément, il faut utiliser des ports différents (ex. 8000 et 5000)
